@@ -3,8 +3,9 @@
 let body = document.querySelector('body')
 
 body.addEventListener('keydown', (e) => {
+    
     e.target.style.background = `rgb(${e.keyCode + Math.floor(Math.random()* 165)}, ${e.keyCode + Math.floor(Math.random()* 165)}, ${e.keyCode + Math.floor(Math.random()* 165)}`
-
+    e.preventDefault()
 });
 
 // let home = document.querySelector('.home')
@@ -86,7 +87,6 @@ for(let i = 0; i < links.length; i++){
     links[i].addEventListener('mouseout', (e) => {
         links[i].style.border = '1px dashed gray'
         console.log(e)
-        e.preventDefault()
     })
 }
 
