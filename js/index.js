@@ -86,6 +86,7 @@ for(let i = 0; i < links.length; i++){
     links[i].addEventListener('mouseout', (e) => {
         links[i].style.border = '1px dashed gray'
         console.log(e)
+        e.preventDefault()
     })
 }
 
