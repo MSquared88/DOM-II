@@ -22,13 +22,27 @@ h2.forEach((element) =>{
         if(e.target.style.color === 'red'){
             e.target.style.color = 'black'
         } else{e.target.style.color = 'red'}
-
-        
     });
     
 })
 
+let intro = document.querySelector('.intro')
+
+intro.addEventListener('click', (e) => {
+    intro.style.border = '2px dashed pink'
+    
+})
+
+let introP = document.querySelector('.intro p')
+
+introP.addEventListener('click', (e) => {
+    introP.style.border = '2px dashed purple'
+    e.stopPropagation()
+})
+
 let logo = document.querySelector('.logo-heading')
+
+
 
 logo.addEventListener('dblclick', (e) => {
     e.target.style.fontSize = '8rem'
